@@ -1,11 +1,17 @@
-* {
+@import url(https://fonts.googleapis.com/css?family=PT+Sans&display=swap);* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: "PT Sans", sans-serif;
 }
 
 .wrap_90 {
   width: 90%;
+  margin: auto;
+}
+
+.wrap_70 {
+  width: 70%;
   margin: auto;
 }
 
@@ -22,14 +28,51 @@ a {
 }
 
 .nav__bar {
-  background-color: blue;
   height: 80px;
   line-height: 80px;
   justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  overflow: hidden;
 }
 
-.nav__bar img {
+.nav__bar .nav__bar__logo {
   height: 80px;
+}
+
+.nav__bar li {
+  padding-left: 40px;
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.nav__bar li a {
+  color: #58402C;
+}
+
+.nav__bar li a:hover {
+  color: blue;
+}
+
+.nav__bar .button button {
+  height: 30px;
+  vertical-align: middle;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+  background-color: white;
+  border-color: blue;
+  border-radius: 5px;
+}
+
+.nav__bar .button button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.nav__bar .button button img {
+  height: 18px;
+  vertical-align: middle;
+  padding-right: 5px;
 }
 
 .jumbo {
@@ -49,5 +92,9 @@ a {
 
 .jumbo .jumbo__right img {
   width: 100%;
+}
+
+.main__first {
+  background-color: pink;
 }
 

@@ -1,12 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans&display=swap');
 @import "Partials/_commons.scss";
 @import "Partials/_variables.scss";
+@import "Partials/_mixin.scss";
+// NAV BAR
 .nav__bar {
-  background-color: blue;
   height: $navbarheigth;
   line-height: $navbarheigth;
   justify-content: space-between;
-  img {
+  border-bottom: 1px solid lightgrey;
+  overflow: hidden;
+  .nav__bar__logo {
     height: $navbarheigth;
+  }
+  li {
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 0.9em;
+    a {
+      color: $headercolor;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+  .button {
+    button {
+      @include buttonElement;
+      &:hover {
+        background-color: blue;
+        color: white;
+      }
+      img {
+      @include buttonElementImage;
+      }
+    }
   }
 }
 
@@ -24,4 +51,7 @@
       width: 100%;
     }
   }
+}
+.main__first {
+  background-color: pink;
 }
