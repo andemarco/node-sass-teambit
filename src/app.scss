@@ -38,11 +38,37 @@
 }
 
 .jumbo {
-  background-color: yellow;
-  height: 500px;
   .jumbo__left {
     width: 45%;
-    background-color: azure;
+    h1 {
+      font-size: 3.2em;
+      font-weight: bold;
+      padding: 15px;
+      color: $headercolor;
+      line-height: 70px;
+    }
+    h6 {
+      padding: 15px;
+      font-size: 1.4em;
+      font-weight: normal;
+      color: $headercolor;
+    }
+    button {
+      @include buttonElement;
+      background-color: #30488F;
+      border-color: #223569;
+      color: white;
+      margin-left: 50px;
+      &:hover {
+        background-color: #223569;
+      }
+      img {
+      @include buttonElementImage;
+      }
+      span {
+        padding-left: 25px;
+      }
+    }
   }
   .jumbo__right {
     width: 55%;

@@ -54,7 +54,7 @@ a {
 }
 
 .nav__bar .button button {
-  height: 30px;
+  height: 40px;
   vertical-align: middle;
   font-size: 0.9em;
   font-weight: bold;
@@ -75,14 +75,52 @@ a {
   padding-right: 5px;
 }
 
-.jumbo {
-  background-color: yellow;
-  height: 500px;
-}
-
 .jumbo .jumbo__left {
   width: 45%;
-  background-color: azure;
+}
+
+.jumbo .jumbo__left h1 {
+  font-size: 3.2em;
+  font-weight: bold;
+  padding: 15px;
+  color: #58402C;
+  line-height: 70px;
+}
+
+.jumbo .jumbo__left h6 {
+  padding: 15px;
+  font-size: 1.4em;
+  font-weight: normal;
+  color: #58402C;
+}
+
+.jumbo .jumbo__left button {
+  height: 40px;
+  vertical-align: middle;
+  font-size: 0.9em;
+  font-weight: bold;
+  padding: 5px 10px 5px 10px;
+  background-color: white;
+  border-color: blue;
+  border-radius: 5px;
+  background-color: #30488F;
+  border-color: #223569;
+  color: white;
+  margin-left: 50px;
+}
+
+.jumbo .jumbo__left button:hover {
+  background-color: #223569;
+}
+
+.jumbo .jumbo__left button img {
+  height: 18px;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.jumbo .jumbo__left button span {
+  padding-left: 25px;
 }
 
 .jumbo .jumbo__right {
