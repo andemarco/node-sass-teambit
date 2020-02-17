@@ -1,0 +1,90 @@
+.nav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  z-index: 342234;
+}
+.nav__bar {
+  height: $navbarheigth;
+  line-height: $navbarheigth;
+  justify-content: space-between;
+  border-bottom: 1px solid lightgrey;
+  overflow: hidden;
+  background-color: white;
+  .nav__bar__logo {
+    height: $navbarheigth;
+  }
+  li {
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 0.9em;
+    a {
+      color: $headercolor;
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+  .button {
+    button {
+      @include buttonElement;
+      &:hover {
+        background-color: blue;
+        color: white;
+      }
+      img {
+      @include buttonElementImage;
+      }
+    }
+  }
+}
+
+.jumbo {
+  margin-top: 180px; ;
+  .jumbo__left {
+    width: 45%;
+    h1 {
+      font-size: 3.2em;
+      font-weight: bold;
+      padding: 15px;
+      color: $headercolor;
+      line-height: 70px;
+    }
+    h6 {
+      padding: 15px;
+      font-size: 1.4em;
+      font-weight: normal;
+      color: $headercolor;
+    }
+    button {
+      @include buttonElement;
+      background-color: #30488F;
+      border-color: #223569;
+      color: white;
+      margin-left: 50px;
+      &:hover {
+        background-color: #223569;
+      }
+      img {
+      @include buttonElementImage;
+      }
+    }
+    p {
+      padding: 20px;
+      a {
+        color: $headercolor;
+        font-size: 0.7em;
+      }
+    }
+  }
+  .jumbo__right {
+    width: 55%;
+    img {
+      width: 100%;
+    }
+  }
+}

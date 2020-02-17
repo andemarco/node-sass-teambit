@@ -1,0 +1,35 @@
+.main__first {
+  background-color: #FFE7D1;
+  text-align: center;
+  color: $headercolor;
+  h2 {
+    @include jumboTitles
+  }
+}
+.left,
+.center,
+.right{
+  width: calc(100% / 3);
+  padding: 20px;
+  text-align: center;
+}
+.left img,
+.center img,
+.right img{
+  height: 100px;
+  margin: 40px;
+}
+.main__first__lead {
+  text-align: center;
+  border-bottom: 1px solid $headercolor;
+}
+.main__first__team {
+  text-align: center;
+}
+
+.main__first__lead > img,
+.main__first__team > img {
+  height: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
