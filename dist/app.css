@@ -1,4 +1,53 @@
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrap_90 {
+  width: 90%;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav__bar {
   background-color: blue;
+  height: 80px;
+  line-height: 80px;
+  justify-content: space-between;
+}
+
+.nav__bar img {
+  height: 80px;
+}
+
+.jumbo {
+  background-color: yellow;
+  height: 500px;
+}
+
+.jumbo .jumbo__left {
+  width: 45%;
+  background-color: azure;
+}
+
+.jumbo .jumbo__right {
+  width: 55%;
+  background-color: grey;
+}
+
+.jumbo .jumbo__right img {
+  width: 100%;
 }
 

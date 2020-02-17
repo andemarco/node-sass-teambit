@@ -1,3 +1,27 @@
-* {
+@import "Partials/_commons.scss";
+@import "Partials/_variables.scss";
+.nav__bar {
   background-color: blue;
+  height: $navbarheigth;
+  line-height: $navbarheigth;
+  justify-content: space-between;
+  img {
+    height: $navbarheigth;
+  }
+}
+
+.jumbo {
+  background-color: yellow;
+  height: 500px;
+  .jumbo__left {
+    width: 45%;
+    background-color: azure;
+  }
+  .jumbo__right {
+    width: 55%;
+    background-color: grey;
+    img {
+      width: 100%;
+    }
+  }
 }
