@@ -3,12 +3,23 @@
 @import "Partials/_variables.scss";
 @import "Partials/_mixin.scss";
 // NAV BAR
+.nav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  z-index: 342234;
+}
 .nav__bar {
   height: $navbarheigth;
   line-height: $navbarheigth;
   justify-content: space-between;
   border-bottom: 1px solid lightgrey;
   overflow: hidden;
+  background-color: white;
   .nav__bar__logo {
     height: $navbarheigth;
   }
@@ -38,6 +49,7 @@
 }
 
 .jumbo {
+  margin-top: 180px; ;
   .jumbo__left {
     width: 45%;
     h1 {
@@ -65,19 +77,54 @@
       img {
       @include buttonElementImage;
       }
-      span {
-        padding-left: 25px;
+    }
+    p {
+      padding: 20px;
+      a {
+        color: $headercolor;
+        font-size: 0.7em;
       }
     }
   }
   .jumbo__right {
     width: 55%;
-    background-color: grey;
     img {
       width: 100%;
     }
   }
 }
 .main__first {
-  background-color: pink;
+  background-color: #FFE7D1;
+  text-align: center;
+  color: $headercolor;
+  h2 {
+    @include jumboTitles
+  }
+}
+.left,
+.center,
+.right{
+  width: calc(100% / 3);
+  padding: 20px;
+  text-align: center;
+}
+.left img,
+.center img,
+.right img{
+  height: 100px;
+  margin: 40px;
+}
+.main__first__lead {
+  text-align: center;
+  border-bottom: 1px solid $headercolor;
+}
+.main__first__team {
+  text-align: center;
+}
+
+.main__first__lead > img,
+.main__first__team > img {
+  height: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }

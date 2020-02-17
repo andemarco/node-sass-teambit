@@ -27,12 +27,24 @@ a {
   text-decoration: none;
 }
 
+.nav {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 342234;
+}
+
 .nav__bar {
   height: 80px;
   line-height: 80px;
   justify-content: space-between;
   border-bottom: 1px solid lightgrey;
   overflow: hidden;
+  background-color: white;
 }
 
 .nav__bar .nav__bar__logo {
@@ -73,6 +85,10 @@ a {
   height: 18px;
   vertical-align: middle;
   padding-right: 5px;
+}
+
+.jumbo {
+  margin-top: 180px;
 }
 
 .jumbo .jumbo__left {
@@ -119,13 +135,17 @@ a {
   padding-right: 5px;
 }
 
-.jumbo .jumbo__left button span {
-  padding-left: 25px;
+.jumbo .jumbo__left p {
+  padding: 20px;
+}
+
+.jumbo .jumbo__left p a {
+  color: #58402C;
+  font-size: 0.7em;
 }
 
 .jumbo .jumbo__right {
   width: 55%;
-  background-color: grey;
 }
 
 .jumbo .jumbo__right img {
@@ -133,6 +153,48 @@ a {
 }
 
 .main__first {
-  background-color: pink;
+  background-color: #FFE7D1;
+  text-align: center;
+  color: #58402C;
+}
+
+.main__first h2 {
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  padding-top: 100px;
+  color: #58402C;
+  font-size: 1.5em;
+}
+
+.left,
+.center,
+.right {
+  width: calc(100% / 3);
+  padding: 20px;
+  text-align: center;
+}
+
+.left img,
+.center img,
+.right img {
+  height: 100px;
+  margin: 40px;
+}
+
+.main__first__lead {
+  text-align: center;
+  border-bottom: 1px solid #58402C;
+}
+
+.main__first__team {
+  text-align: center;
+}
+
+.main__first__lead > img,
+.main__first__team > img {
+  height: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
