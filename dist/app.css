@@ -429,3 +429,52 @@ a {
   margin-top: 110px;
 }
 
+.main__third__section {
+  background-color: #FFE7D1;
+  text-align: center;
+  color: #58402C;
+}
+
+.main__third__section h2 {
+  font-size: 2em;
+  line-height: 45px;
+  padding: 50px;
+}
+
+.main__third__section blockquote {
+  text-align: left;
+  padding: 30px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.main__third__section blockquote p {
+  margin-bottom: 50px;
+}
+
+.main__third__section .quote_photo {
+  display: inline-block;
+}
+
+.main__third__section .quote_photo img {
+  height: 40px;
+}
+
+.main__third__section .quote_cit {
+  display: inline-block;
+  height: 44px;
+  vertical-align: super;
+}
+
+.main__third__section .quote_cit span {
+  display: block;
+  font-size: 0.8em;
+}
+
+.main__third__section .quote_cit .name {
+  color: #30488F;
+  font-weight: bold;
+}
+
