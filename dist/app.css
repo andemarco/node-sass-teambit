@@ -451,7 +451,7 @@ a {
 .main__third__section blockquote {
   text-align: left;
   padding: 30px;
-  width: 638px;
+  max-width: 638px;
   margin: 0 auto;
   background-color: white;
   border: 1px solid black;
