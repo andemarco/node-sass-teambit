@@ -66,3 +66,64 @@
 .main__second__fourth {
   margin-top: 110px;
 }
+.main__third__section {
+  background-color: #FFE7D1;
+  text-align: center;
+  padding-bottom: 70px;
+  color: $headercolor;
+  h2 {
+    font-size: 2em;
+    line-height: 45px;
+    padding: 50px;
+  }
+  blockquote {
+    text-align: left;
+    padding: 30px;
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid black;
+    margin-bottom: 40px;
+    p {
+      margin-bottom: 50px;
+    }
+  }
+  .quote_photo {
+    display: inline-block;
+    img {
+      height: 40px;
+    }
+  }
+  .quote_cit {
+    display: inline-block;
+    height: 44px;
+    vertical-align: super;
+    span {
+      display: block;
+      font-size: 0.8em;
+    }
+    .name {
+      color: $bluecolor;
+      font-weight: bold;
+    }
+  }
+  button {
+    @include buttonElement;
+    background-color: #30488F;
+    border-color: #223569;
+    color: white;
+    &:hover {
+      background-color: #223569;
+    }
+    img {
+    @include buttonElementImage;
+    }
+  }
+  p {
+    padding-top: 10px;
+    a {
+      color: $headercolor;
+      font-size: 0.7em;
+    }
+  }
+}
