@@ -1,12 +1,12 @@
-@import url(https://fonts.googleapis.com/css?family=PT+Sans&display=swap);* {
+@import url(http://db.onlinewebfonts.com/c/0dd7edde115ef38e7def4b16e93b5884?family=HarmoniaSansW01-Regular);* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: HarmoniaSansW01-Regular;
 }
 
-.wrap_90 {
-  width: 90%;
+.wrap_95 {
+  width: 92.5%;
   margin: auto;
 }
 
@@ -47,10 +47,6 @@ a {
   background-color: white;
 }
 
-.nav__bar .nav__bar__logo {
-  height: 80px;
-}
-
 .nav__bar li {
   padding-left: 40px;
   font-weight: bold;
@@ -59,26 +55,36 @@ a {
 
 .nav__bar li a {
   color: #58402C;
+  transition: 0.2s;
 }
 
 .nav__bar li a:hover {
-  color: blue;
+  color: #30488F;
 }
 
 .nav__bar .button button {
-  height: 40px;
+  height: 35px;
   vertical-align: middle;
   font-size: 0.9em;
   font-weight: bold;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 15px 5px 15px;
   background-color: white;
-  border-color: blue;
+  border-color: #30488F;
   border-radius: 5px;
+  transition: 0.2s;
 }
 
 .nav__bar .button button:hover {
-  background-color: blue;
+  cursor: pointer;
+}
+
+.nav__bar .button button:hover {
+  background-color: #30488F;
   color: white;
+}
+
+.nav__bar .button button:hover img {
+  -webkit-filter: brightness(100);
 }
 
 .nav__bar .button button img {
@@ -89,6 +95,7 @@ a {
 
 .jumbo {
   margin-top: 180px;
+  margin-bottom: 150px;
 }
 
 .jumbo .jumbo__left {
@@ -98,31 +105,35 @@ a {
 .jumbo .jumbo__left h1 {
   font-size: 3.2em;
   font-weight: bold;
-  padding: 15px;
   color: #58402C;
   line-height: 70px;
 }
 
 .jumbo .jumbo__left h6 {
-  padding: 15px;
   font-size: 1.4em;
+  margin-top: 30px;
+  margin-bottom: 30px;
   font-weight: normal;
   color: #58402C;
 }
 
 .jumbo .jumbo__left button {
-  height: 40px;
+  height: 35px;
   vertical-align: middle;
   font-size: 0.9em;
   font-weight: bold;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 15px 5px 15px;
   background-color: white;
-  border-color: blue;
+  border-color: #30488F;
   border-radius: 5px;
+  transition: 0.2s;
   background-color: #30488F;
   border-color: #223569;
   color: white;
-  margin-left: 50px;
+}
+
+.jumbo .jumbo__left button:hover {
+  cursor: pointer;
 }
 
 .jumbo .jumbo__left button:hover {
@@ -136,7 +147,7 @@ a {
 }
 
 .jumbo .jumbo__left p {
-  padding: 20px;
+  padding-top: 20px;
 }
 
 .jumbo .jumbo__left p a {
@@ -144,18 +155,27 @@ a {
   font-size: 0.7em;
 }
 
+.jumbo .jumbo__left span {
+  display: inline-block;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: lightgrey;
+}
+
 .jumbo .jumbo__right {
   width: 55%;
+  text-align: right;
 }
 
 .jumbo .jumbo__right img {
-  width: 100%;
+  width: 90%;
 }
 
 .main__first {
   background-color: #FFE7D1;
   text-align: center;
   color: #58402C;
+  padding-bottom: 75px;
 }
 
 .main__first h2 {

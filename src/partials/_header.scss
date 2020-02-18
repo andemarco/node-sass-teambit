@@ -15,17 +15,15 @@
   border-bottom: 1px solid lightgrey;
   overflow: hidden;
   background-color: white;
-  .nav__bar__logo {
-    height: $navbarheigth;
-  }
   li {
     padding-left: 40px;
     font-weight: bold;
     font-size: 0.9em;
     a {
       color: $headercolor;
+      transition: $transitiontime02;
       &:hover {
-        color: blue;
+        color: $bluecolor;
       }
     }
   }
@@ -33,8 +31,11 @@
     button {
       @include buttonElement;
       &:hover {
-        background-color: blue;
+        background-color: $bluecolor;
         color: white;
+        img {
+          -webkit-filter: brightness(100);
+        }
       }
       img {
       @include buttonElementImage;
@@ -44,19 +45,20 @@
 }
 
 .jumbo {
-  margin-top: 180px; ;
+  margin-top: 180px;
+  margin-bottom: 150px;
   .jumbo__left {
     width: 45%;
     h1 {
       font-size: 3.2em;
       font-weight: bold;
-      padding: 15px;
       color: $headercolor;
       line-height: 70px;
     }
     h6 {
-      padding: 15px;
       font-size: 1.4em;
+      margin-top: 30px;
+      margin-bottom: 30px;
       font-weight: normal;
       color: $headercolor;
     }
@@ -65,7 +67,6 @@
       background-color: #30488F;
       border-color: #223569;
       color: white;
-      margin-left: 50px;
       &:hover {
         background-color: #223569;
       }
@@ -74,17 +75,24 @@
       }
     }
     p {
-      padding: 20px;
+      padding-top: 20px;
       a {
         color: $headercolor;
         font-size: 0.7em;
       }
     }
+    span {
+      display: inline-block;
+      margin-left: 25px;
+      margin-right: 25px;
+      color: lightgrey
+    }
   }
   .jumbo__right {
     width: 55%;
+    text-align: right;
     img {
-      width: 100%;
+      width: 90%;
     }
   }
 }
