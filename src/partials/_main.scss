@@ -34,3 +34,35 @@
   margin-top: 100px;
   margin-bottom: 100px;
 }
+.main__second {
+  .main_second_first_img {
+    @include mainlargeleft;
+  }
+  .main_second_first_did {
+    @include mainshortright;
+  }
+  .main_second_second_img {
+    @include mainlargeright;
+  }
+  .main_second_second_did {
+    @include mainshortleft;
+  }
+  .main_second_third_img {
+    @include mainlargeleft;
+  }
+  .main_second_third_did {
+    @include mainshortright;
+  }
+  .main_second_fourth_img {
+    @include mainlargeright;
+  }
+  .main_second_fourth_did {
+    @include mainshortleft;
+  }
+}
+.main__second__first,
+.main__second__second,
+.main__second__third,
+.main__second__fourth {
+  margin-top: 110px;
+}

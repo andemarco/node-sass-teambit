@@ -25,3 +25,90 @@
   color: $headercolor;
   font-size: 1.5em;
 }
+
+@mixin mainlargeleft {
+  width: 45%;
+  overflow: hidden;
+  img {
+    width: 130%;
+    display: block;
+    position:relative;
+    right: 25%;
+  }
+}
+@mixin mainlargeright {
+  width: 45%;
+  overflow: hidden;
+  img {
+    width: 130%;
+    display: block;
+    position:relative;
+    right: 4%;
+  }
+}
+@mixin mainshortright {
+  width: 45%;
+  margin-left: 5.5%;
+  overflow: hidden;
+  margin-right: 4.5%;
+  h2 {
+    width: 70%;
+    color: $headercolor;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 36px;
+  }
+  h3 {
+    width: 75%;
+    color: $headercolor;
+    font-size: 1.4em;
+    font-weight: normal;
+    line-height: 36px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 1.4em;
+  }
+  a {
+    color: $bluecolor
+  }
+  img {
+    width: 60%;
+    padding: 40px;
+    margin: 10px 0 0 10px;
+  }
+}
+@mixin mainshortleft {
+  width: 45%;
+  margin-left: 7.5%;
+  margin-right: 2.5%;
+  overflow: hidden;
+  h2 {
+    width: 70%;
+    color: $headercolor;
+    font-size: 1.5em;
+    font-weight: bold;
+    line-height: 36px;
+  }
+  h3 {
+    width: 75%;
+    color: $headercolor;
+    font-size: 1.4em;
+    font-weight: normal;
+    line-height: 36px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  p {
+    font-size: 1.4em;
+  }
+  a {
+    color: $bluecolor
+  }
+  img {
+    width: 60%;
+    padding: 40px;
+    margin: 10px 0 0 10px;
+  }
+}
