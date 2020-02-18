@@ -27,6 +27,11 @@
       }
     }
   }
+  i {
+    line-height: $navbarheigth;
+    font-size: 1.5em;
+    display: none;
+  }
   .button {
     button {
       @include buttonElement;
@@ -94,17 +99,5 @@
     img {
       width: 90%;
     }
-  }
-}
-
-@media screen and (min-width: 0px) and (max-width: 1140px) {
-  .jumbo {
-    flex-wrap: wrap;
-  }
-  .jumbo__left {
-    width: 90%;
-  }
-  .jumbo__rigth {
-    width: 90%;
   }
 }
