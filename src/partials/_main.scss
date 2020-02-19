@@ -71,6 +71,11 @@
   text-align: center;
   padding-bottom: 70px;
   color: $headercolor;
+  span {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: lightgrey;
+  }
   h2 {
     font-size: 2em;
     line-height: 45px;
